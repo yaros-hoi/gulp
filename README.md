@@ -1,5 +1,5 @@
 # gulp
-_A common template for SCSS/Jade. Build on gulp.
+A common template for SCSS/Jade. Build on gulp.
 
 Run it:
 ```
