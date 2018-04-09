@@ -1,0 +1,47 @@
+.btn {
+	transition: all $animationDuration;
+
+  &-black {
+    background: $colorBlack;
+  }
+
+  &.orange {
+    $colorTop: #fad961;
+    $colorBottom: #e2ac1b;
+    $color: #565449;
+
+    width: 192px;
+    height: 56px;
+    background: linear-gradient(180deg, $colorTop 0%, $colorBottom 98%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    color: $color;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 42px;
+    border: none;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, $colorBottom 0%, $colorTop 98%);
+      transition: all $animationDuration;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &:hover:after {
+      opacity: 1;
+    }
+
+    &:hover, &:active, &:focus {
+      color: $colorWhite;
+    }
+  }
+}

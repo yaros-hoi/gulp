@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import "libraries/bootstrap/bootstrap";
+@import "libraries/font-awesome/font-awesome";
+@import "base/variables";
+@import "base/print";
+@import "base/font";
+@import "base/mixin";
+@import "base/helper";
+@import "elements/button";
+@import "partials/footer";
+
+//@include gradient(red, blue);
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 60px;
+  background: url($path-image + '/bgr.png') repeat 0 0 transparent;
+}

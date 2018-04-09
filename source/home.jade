@@ -1,0 +1,17 @@
+- var title = 'Page Title';
+include includes/general/head
+include includes/general/navbar
+include includes/general/footer
+include includes/general/script
+include includes/home/main
+
+doctype
+html
+    head
+        +head()
+    body
+        +navbar()
+        +main()
+
+        +footer()
+        +script()
