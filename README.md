@@ -1,7 +1,8 @@
 # gulp
-A common template for SCSS/Jade. Build on gulp.
+A starter kit for front-end builds.
 
 Run it:
 ```
+npm install
 gulp
 ```
